@@ -26,6 +26,9 @@ class Chirpscore < Sinatra::Base
     haml :result, format: :html5
   end
 
+  get "/user/:handle" do
+    haml :user, format: :html5
+  end
   # start the server if ruby file executed directly
   run! if app_file == $0
 end

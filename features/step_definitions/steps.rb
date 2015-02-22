@@ -13,3 +13,13 @@ end
 Then(/^I will see the error message "(.*?)"$/) do |expected_error|
   expect(page).to have_content(expected_error)
 end
+
+When(/^I ask for more information about "(.*?)"$/) do |handle|
+  VCR.use_cassette("#{handle}-twitter") do
+    visit "/user/#{handle}"
+  end
+end
+
+Then(/^I will see "(.*?)"$/) do |expected_information|
+  expect(page).to have_content(expected_information)
+end
