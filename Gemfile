@@ -5,6 +5,7 @@ gem "twitter"
 gem "sentimental"
 gem "data_mapper"
 gem "thin"
+gem "haml"
 
 gem "sqlite3"
 gem "dm-sqlite-adapter"

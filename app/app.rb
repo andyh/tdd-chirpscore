@@ -2,6 +2,7 @@ $stdout.sync = true
 require "dotenv"
 require "sentimental"
 require "twitter"
+require "haml"
 require_relative "chirpscore_calculator"
 
 ENV["RACK_ENV"] ||= "development"
@@ -17,22 +18,12 @@ class Chirpscore < Sinatra::Base
     ChirpscoreCalculator.new
   end
   get '/' do
-    <<EOS
-    <form method="post" action="/result">
-      <input type=text name=handle />
-      <input type=submit value='go go go!!!!' />
-    </form>
-EOS
+    haml :index, format: :html5
   end
 
   post '/result' do
-    <<EOS
-    <html>
-        <body>
-    #{calculator.calculate(params[:handle])}
-        </body>
-    </html>
-EOS
+    @result = calculator.calculate(params[:handle])
+    haml :result, format: :html5
   end
 
   # start the server if ruby file executed directly
