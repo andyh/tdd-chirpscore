@@ -27,6 +27,7 @@ class Chirpscore < Sinatra::Base
   end
 
   get "/user/:handle" do
+    @phrase = calculator.chirpscore_phrase(params[:handle])
     haml :user, format: :html5
   end
   # start the server if ruby file executed directly

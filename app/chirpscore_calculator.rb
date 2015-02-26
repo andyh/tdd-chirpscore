@@ -22,5 +22,11 @@ class ChirpscoreCalculator
     end
 
   end
+
+  def chirpscore_phrase(handle)
+    score = calculate(handle)
+    mood = score.to_f > 0 ? "ecstatic" : "irritated"
+    "#{handle[1..-1]} is an #{mood} tweeter with a score of #{score}"
+  end
 end
 
