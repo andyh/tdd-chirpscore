@@ -15,7 +15,7 @@ Then(/^I will see the error message "(.*?)"$/) do |expected_error|
 end
 
 When(/^I ask for more information about "(.*?)"$/) do |handle|
-  VCR.use_cassette("#{handle}-twitter") do
+  VCR.use_cassette("#{handle}-twitter", allow_playback_repeats: true) do
     visit "/user/#{handle}"
   end
 end

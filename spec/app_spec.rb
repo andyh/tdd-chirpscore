@@ -18,8 +18,8 @@ RSpec.describe 'The Chirpscore App' do
   end
 
   it "renders a detailed chirpscore" do
-    allow_any_instance_of(ChirpscoreCalculator).to receive(:calculate).with('faketwitteruser') { '123456789' }
+    allow(ChirpscoreUser).to receive(:fetch).with("faketwitteruser") { instance_double("ChirpscoreUser", :phrase => "faketwitteruser is a fake tweeter with a score of 9876") }
     get "/user/faketwitteruser"
-    expect(last_response).to be_ok
+    expect(last_response.body).to include '9876'
   end
 end

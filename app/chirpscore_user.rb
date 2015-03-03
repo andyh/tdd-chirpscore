@@ -23,6 +23,11 @@ class ChirpscoreUser
     end
   end
 
+  def phrase
+    mood = score.to_f > 0 ? "ecstatic" : "irritated"
+    "#{handle[1..-1]} is an #{mood} tweeter with a score of #{score}"
+  end
+
   private
   def client
     Twitter::REST::Client.new do |config|

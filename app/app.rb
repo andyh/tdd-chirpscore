@@ -3,7 +3,6 @@ require "dotenv"
 require "sentimental"
 require "twitter"
 require "haml"
-require_relative "chirpscore_calculator"
 require_relative "chirpscore_user"
 
 ENV["RACK_ENV"] ||= "development"
@@ -15,9 +14,6 @@ Dotenv.load(
 require "sinatra/base"
 
 class Chirpscore < Sinatra::Base
-  def calculator
-    ChirpscoreCalculator.new
-  end
   get '/' do
     haml :index, format: :html5
   end
@@ -29,7 +25,8 @@ class Chirpscore < Sinatra::Base
   end
 
   get "/user/:handle" do
-    @phrase = calculator.chirpscore_phrase(params[:handle])
+    user    = ChirpscoreUser.fetch(params[:handle])
+    @phrase = user.phrase
     haml :user, format: :html5
   end
   # start the server if ruby file executed directly
