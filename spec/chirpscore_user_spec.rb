@@ -4,8 +4,8 @@ require_relative "../app/chirpscore_user"
 RSpec.describe ChirpscoreUser do
   subject { ChirpscoreUser.new "bad handle" }
   describe "#score" do
-    it "returns 'invalid handle' when the handle has spaces" do
-      expect(subject.score).to eql("invalid handle")
+    it "raises 'invalid handle' when the handle has spaces" do
+      expect{ subject.score }.to raise_error(ChirpscoreError, "invalid handle")
     end
   end
 

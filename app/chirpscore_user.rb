@@ -1,3 +1,5 @@
+class ChirpscoreError < StandardError; end
+
 class ChirpscoreUser
   attr_reader :handle
 
@@ -10,17 +12,15 @@ class ChirpscoreUser
   end
 
   def score
-    if handle.include? " "
-      results = "invalid handle"
-    else
-      tweets = client.user_timeline(handle)
-      analyzer = Sentimental.new
+    raise(ChirpscoreError, "invalid handle") if handle.include?(" ")
 
-      results = tweets.inject(0) { |a, e| a + analyzer.get_score(e.text) }
-      results /= tweets.length
-      results = sprintf("%0.02f", results * 10)
-      results
-    end
+    tweets = client.user_timeline(handle)
+    analyzer = Sentimental.new
+
+    results = tweets.inject(0) { |a, e| a + analyzer.get_score(e.text) }
+    results /= tweets.length
+    results = sprintf("%0.02f", results * 10)
+    results
   end
 
   def phrase

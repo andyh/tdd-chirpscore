@@ -29,6 +29,12 @@ class Chirpscore < Sinatra::Base
     @phrase = user.phrase
     haml :user, format: :html5
   end
+
+  error ChirpscoreError do
+    status 400
+    env['sinatra.error'].message
+  end
+
   # start the server if ruby file executed directly
   run! if app_file == $0
 end

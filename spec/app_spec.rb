@@ -22,4 +22,10 @@ RSpec.describe 'The Chirpscore App' do
     get "/user/faketwitteruser"
     expect(last_response.body).to include '9876'
   end
+
+  it "displays appropriate errors" do
+    allow(ChirpscoreUser).to receive(:fetch).with("bad handle").and_raise(ChirpscoreError, "invalid handle")
+    get "/user/bad%20handle"
+    expect(last_response.status).to eq(400)
+  end
 end
