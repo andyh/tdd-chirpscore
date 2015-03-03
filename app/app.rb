@@ -4,6 +4,7 @@ require "sentimental"
 require "twitter"
 require "haml"
 require_relative "chirpscore_calculator"
+require_relative "chirpscore_user"
 
 ENV["RACK_ENV"] ||= "development"
 APP_ENV = ENV.fetch("RACK_ENV")
@@ -22,7 +23,8 @@ class Chirpscore < Sinatra::Base
   end
 
   post '/result' do
-    @result = calculator.calculate(params[:handle])
+    user   = ChirpscoreUser.fetch(params[:handle])
+    @score = user.score
     haml :result, format: :html5
   end
 
