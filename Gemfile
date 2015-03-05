@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "sinatra"
+gem "sinatra", git: "git@github.com:sinatra/sinatra.git"
 gem "twitter"
 gem "sentimental"
 gem "data_mapper"

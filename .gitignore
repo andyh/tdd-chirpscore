@@ -7,3 +7,4 @@ project.vim
 tags
 tmp/*
 .idea
+vendor/
