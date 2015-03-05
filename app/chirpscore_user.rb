@@ -4,6 +4,7 @@ class ChirpscoreUser
   attr_reader :handle
 
   def initialize handle
+    raise(ChirpscoreError, "invalid handle") if handle.include?(" ")
     @handle = handle
   end
 
@@ -12,8 +13,6 @@ class ChirpscoreUser
   end
 
   def score
-    raise(ChirpscoreError, "invalid handle") if handle.include?(" ")
-
     tweets = client.user_timeline(handle)
     analyzer = Sentimental.new
 
