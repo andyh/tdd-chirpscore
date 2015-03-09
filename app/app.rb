@@ -1,13 +1,10 @@
 $stdout.sync = true
 require "dotenv"
-require "sentimental"
-require "twitter"
 require "haml"
 require_relative "chirpscore_user"
 
 ENV["RACK_ENV"] ||= "development"
 APP_ENV = ENV.fetch("RACK_ENV")
-Sentimental.load_defaults
 Dotenv.load(
   File.expand_path("../../.#{APP_ENV}.env", __FILE__),
   File.expand_path("../../.env",  __FILE__))
