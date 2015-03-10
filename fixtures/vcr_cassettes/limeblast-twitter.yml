@@ -251,4 +251,87 @@ http_interactions:
         Ryan","id":24925566,"id_str":"24925566","indices":[0,8]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"}]'
     http_version: 
   recorded_at: Thu, 19 Feb 2015 20:30:20 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?screen_name=limeblast
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.13.0
+      Authorization:
+      - OAuth oauth_consumer_key="k1xAkSV7wHQx6fvioI9cIvyTW", oauth_nonce="89ee165c41fc4824c9463cb0de7095d0",
+        oauth_signature="5WnHjKqXIcFmw4avqaO43684lcw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426021887", oauth_token="2165087958-igdBFUzugKOzUT2sNH2QQefpy7wMD6Ptacc447K",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '1030'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 10 Mar 2015 21:11:25 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 10 Mar 2015 21:11:25 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_f
+      Set-Cookie:
+      - guest_id=v1%3A142602188533343817; Domain=.twitter.com; Path=/; Expires=Thu,
+        09-Mar-2017 21:11:25 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - ab273069d635bb30160c13b88c314181
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '178'
+      X-Rate-Limit-Reset:
+      - '1426022784'
+      X-Response-Time:
+      - '123'
+      X-Transaction:
+      - caebdc020f9e533e
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":14409502,"id_str":"14409502","name":"Daniel Hollands","screen_name":"LimeBlast","location":"Royal
+        Leamington Spa","profile_location":null,"description":"A jack-of-all-trades
+        web developer trying his best to keep up to date with everything the Web has
+        to offer.","url":"http:\/\/t.co\/Wg8eLBDBrG","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/Wg8eLBDBrG","expanded_url":"http:\/\/limeblast.co.uk\/","display_url":"limeblast.co.uk","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":257,"friends_count":122,"listed_count":14,"created_at":"Wed
+        Apr 16 16:04:32 +0000 2008","favourites_count":160,"utc_offset":0,"time_zone":"London","geo_enabled":true,"verified":false,"statuses_count":8474,"lang":"en","status":{"created_at":"Tue
+        Mar 10 14:35:13 +0000 2015","id":575303903144755200,"id_str":"575303903144755200","text":"@SophEPhaux
+        \ud83d\ude01","source":"\u003ca href=\"http:\/\/twitter.com\/download\/android\"
+        rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":575299762750103554,"in_reply_to_status_id_str":"575299762750103554","in_reply_to_user_id":10707202,"in_reply_to_user_id_str":"10707202","in_reply_to_screen_name":"SophEPhaux","geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"SophEPhaux","name":"Sofi","id":10707202,"id_str":"10707202","indices":[0,11]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"und"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"131516","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/477396178208702465\/36_7U_s4_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/477396178208702465\/36_7U_s4_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/14409502\/1414401840","profile_link_color":"009999","profile_sidebar_border_color":"EEEEEE","profile_sidebar_fill_color":"EFEFEF","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 21:11:27 GMT
 recorded_with: VCR 2.9.3

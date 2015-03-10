@@ -7,6 +7,15 @@ RSpec.describe ChirpscoreUser, "with no handle" do
   end
 end
 
+RSpec.describe ChirpscoreUser, "with a non-existent handle" do
+  let(:gateway) { instance_double("TwitterGateway") }
+
+  before { allow(gateway).to receive(:handle_exists?).and_return(false) }
+  it "raises a not found error" do
+    expect { ChirpscoreUser.new(handle: "elptics", gateway: gateway) }.to raise_error(ChirpscoreNotFound, "handle does not exist")
+  end
+end
+
 RSpec.describe ChirpscoreUser, "with a bad handle" do
   it "raises a 'bad handle' error" do
     expect { ChirpscoreUser.new(handle: "bad handle") }.to raise_error(ChirpscoreError, "invalid handle")
@@ -18,6 +27,8 @@ RSpec.describe ChirpscoreUser, "with a valid handle" do
   let(:analyzer) { instance_double("SentimentAnalyzer") }
   let(:gateway) { instance_double("TwitterGateway") }
   let(:user) { ChirpscoreUser.new(handle: "elaptics", analyzer: analyzer, gateway: gateway) }
+
+  before { allow(gateway).to receive(:handle_exists?).and_return(true) }
 
   describe "#score" do
     it "returns a calculated score from the collection of phrases" do

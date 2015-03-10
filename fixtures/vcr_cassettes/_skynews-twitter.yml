@@ -251,4 +251,86 @@ http_interactions:
         Jul 19 14:42:53 +0000 2007","favourites_count":1,"utc_offset":0,"time_zone":"London","geo_enabled":false,"verified":true,"statuses_count":128367,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":true,"profile_background_color":"000000","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/507147777357262848\/OJoZrDWj.jpeg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/507147777357262848\/OJoZrDWj.jpeg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/459651300204888064\/6TKUNqTU_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/459651300204888064\/6TKUNqTU_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/7587032\/1398424340","profile_link_color":"385FAC","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"EDEDED","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":95,"favorite_count":26,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"http:\/\/t.co\/z4GVri5Uht","expanded_url":"http:\/\/trib.al\/HY4FsUm","display_url":"trib.al\/HY4FsUm","indices":[79,101]}],"media":[{"id":569513523248906241,"id_str":"569513523248906241","indices":[102,124],"media_url":"http:\/\/pbs.twimg.com\/media\/B-dRiDAIQAEzCOG.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/B-dRiDAIQAEzCOG.jpg","url":"http:\/\/t.co\/8PAUdqP6D3","display_url":"pic.twitter.com\/8PAUdqP6D3","expanded_url":"http:\/\/twitter.com\/SkyNews\/status\/569513523329540096\/photo\/1","type":"photo","sizes":{"thumb":{"w":150,"h":150,"resize":"crop"},"small":{"w":340,"h":191,"resize":"fit"},"medium":{"w":600,"h":337,"resize":"fit"},"large":{"w":1024,"h":576,"resize":"fit"}}}]},"extended_entities":{"media":[{"id":569513523248906241,"id_str":"569513523248906241","indices":[102,124],"media_url":"http:\/\/pbs.twimg.com\/media\/B-dRiDAIQAEzCOG.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/B-dRiDAIQAEzCOG.jpg","url":"http:\/\/t.co\/8PAUdqP6D3","display_url":"pic.twitter.com\/8PAUdqP6D3","expanded_url":"http:\/\/twitter.com\/SkyNews\/status\/569513523329540096\/photo\/1","type":"photo","sizes":{"thumb":{"w":150,"h":150,"resize":"crop"},"small":{"w":340,"h":191,"resize":"fit"},"medium":{"w":600,"h":337,"resize":"fit"},"large":{"w":1024,"h":576,"resize":"fit"}}}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"}]'
     http_version: 
   recorded_at: Sun, 22 Feb 2015 20:28:23 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?screen_name=@skynews
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.13.0
+      Authorization:
+      - OAuth oauth_consumer_key="k1xAkSV7wHQx6fvioI9cIvyTW", oauth_nonce="bdef16282da477992c919ddecc09796b",
+        oauth_signature="1%2BInPyQiZezBNOaSo77BsxFe8YU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426021888", oauth_token="2165087958-igdBFUzugKOzUT2sNH2QQefpy7wMD6Ptacc447K",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '1069'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 10 Mar 2015 21:11:26 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 10 Mar 2015 21:11:26 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_f
+      Set-Cookie:
+      - guest_id=v1%3A142602188613080553; Domain=.twitter.com; Path=/; Expires=Thu,
+        09-Mar-2017 21:11:26 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 14443e0460e26e93b454d15a7ac73fd5
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '176'
+      X-Rate-Limit-Reset:
+      - '1426022784'
+      X-Response-Time:
+      - '127'
+      X-Transaction:
+      - 55893f2cf1f002a3
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":7587032,"id_str":"7587032","name":"Sky News","screen_name":"SkyNews","location":"London,
+        UK","profile_location":null,"description":"Stories direct from the @SkyNews
+        newsroom. Tweet us your queries and questions. For breaking news, follow @SkyNewsBreak.","url":"http:\/\/t.co\/7witOoeYyy","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/7witOoeYyy","expanded_url":"http:\/\/www.skynews.com\/","display_url":"skynews.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1935397,"friends_count":17,"listed_count":15326,"created_at":"Thu
+        Jul 19 14:42:53 +0000 2007","favourites_count":1,"utc_offset":0,"time_zone":"London","geo_enabled":false,"verified":true,"statuses_count":131080,"lang":"en","status":{"created_at":"Tue
+        Mar 10 21:02:34 +0000 2015","id":575401383366647808,"id_str":"575401383366647808","text":"US
+        Plan To Ban Popular Rifle Ammo Is Dropped http:\/\/t.co\/A6nJsajcSp","source":"\u003ca
+        href=\"http:\/\/news.sky.com\" rel=\"nofollow\"\u003eSkyNews Alerts - Latest\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":7,"favorite_count":2,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"http:\/\/t.co\/A6nJsajcSp","expanded_url":"http:\/\/news.sky.com\/story\/1442490\/us-plan-to-ban-popular-rifle-ammo-is-dropped","display_url":"news.sky.com\/story\/1442490\/\u2026","indices":[45,67]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":true,"profile_background_color":"000000","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/507147777357262848\/OJoZrDWj.jpeg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/507147777357262848\/OJoZrDWj.jpeg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/459651300204888064\/6TKUNqTU_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/459651300204888064\/6TKUNqTU_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/7587032\/1398424340","profile_link_color":"385FAC","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"EDEDED","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 21:11:28 GMT
 recorded_with: VCR 2.9.3

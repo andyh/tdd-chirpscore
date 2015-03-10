@@ -11,6 +11,7 @@ class ChirpscoreUser
     @handle   = handle
     @gateway  = gateway
     @analyzer = analyzer
+    raise(ChirpscoreNotFound, "handle does not exist") unless check_handle_existence
   end
 
   def self.fetch handle
@@ -30,6 +31,10 @@ class ChirpscoreUser
 
   private
   attr_reader :gateway, :analyzer
+
+  def check_handle_existence
+    gateway.handle_exists?(handle)
+  end
 end
 
 

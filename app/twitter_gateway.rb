@@ -1,8 +1,18 @@
 require "twitter"
 
+class ChirpscoreNotFound < StandardError; end
+
 class TwitterGateway
   def fetch_phrases(handle)
     client.user_timeline(handle).collect(&:text)
+  end
+
+  def handle_exists?(handle)
+    if client.user(handle)
+      return true
+    end
+  rescue Twitter::Error::NotFound
+    return false
   end
 
   private

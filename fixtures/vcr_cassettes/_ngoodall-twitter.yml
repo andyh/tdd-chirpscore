@@ -97,4 +97,86 @@ http_interactions:
         Nov 21 05:30:35 +0000 2008","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":5,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"}]'
     http_version: 
   recorded_at: Sun, 22 Feb 2015 20:28:23 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?screen_name=@ngoodall
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.13.0
+      Authorization:
+      - OAuth oauth_consumer_key="k1xAkSV7wHQx6fvioI9cIvyTW", oauth_nonce="a01a179e1411fa4d9a3f916fa4591783",
+        oauth_signature="1y5IhIRH%2FAKAgvIauAKCwB2aajg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426021888", oauth_token="2165087958-igdBFUzugKOzUT2sNH2QQefpy7wMD6Ptacc447K",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '862'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 10 Mar 2015 21:11:25 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 10 Mar 2015 21:11:25 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_f
+      Set-Cookie:
+      - guest_id=v1%3A142602188573995701; Domain=.twitter.com; Path=/; Expires=Thu,
+        09-Mar-2017 21:11:25 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - e8a8e2b647be9bbcd94b97ec73dfe58a
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '177'
+      X-Rate-Limit-Reset:
+      - '1426022784'
+      X-Response-Time:
+      - '132'
+      X-Transaction:
+      - a1a9f5cc671c1b8e
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":17531821,"id_str":"17531821","name":"ngoodall","screen_name":"ngoodall","location":"","profile_location":null,"description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":5,"friends_count":9,"listed_count":0,"created_at":"Fri
+        Nov 21 05:30:35 +0000 2008","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":5,"lang":"en","status":{"created_at":"Mon
+        Mar 10 02:37:34 +0000 2014","id":442851729298563073,"id_str":"442851729298563073","text":"It
+        is amazing to see you change the lives of so many people. I love your show!
+        @TLC #LongIslandMedium","source":"\u003ca href=\"https:\/\/mobile.twitter.com\"
+        rel=\"nofollow\"\u003eMobile Web (M2)\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[{"text":"LongIslandMedium","indices":[84,101]}],"symbols":[],"user_mentions":[{"screen_name":"TLC","name":"TLC
+        Network","id":21313855,"id_str":"21313855","indices":[79,83]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 21:11:28 GMT
 recorded_with: VCR 2.9.3

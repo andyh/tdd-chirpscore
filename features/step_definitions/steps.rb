@@ -1,5 +1,5 @@
 When(/^I specify "(.*?)"$/) do |handle|
-  VCR.use_cassette("#{handle}-twitter") do
+  VCR.use_cassette("#{handle}-twitter", :record => :new_episodes) do
     visit '/'
     fill_in 'handle', with: handle
     click_button 'go go go!!!!'
@@ -15,7 +15,7 @@ Then(/^I will see the error message "(.*?)"$/) do |expected_error|
 end
 
 When(/^I ask for more information about "(.*?)"$/) do |handle|
-  VCR.use_cassette("#{handle}-twitter", allow_playback_repeats: true) do
+  VCR.use_cassette("#{handle}-twitter", allow_playback_repeats: true, :record => :new_episodes) do
     visit "/user/#{handle}"
   end
 end
