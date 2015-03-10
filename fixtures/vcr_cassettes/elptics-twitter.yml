@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?screen_name=elptics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.13.0
+      Authorization:
+      - OAuth oauth_consumer_key="k1xAkSV7wHQx6fvioI9cIvyTW", oauth_nonce="f5b5056f36499119a0646021c75ae4ba",
+        oauth_signature="KWipvmYSuFfEhU8RzHWcqlShYuU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426022225", oauth_token="2165087958-igdBFUzugKOzUT2sNH2QQefpy7wMD6Ptacc447K",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '93'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 10 Mar 2015 21:17:03 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 10 Mar 2015 21:17:03 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_f
+      Set-Cookie:
+      - guest_id=v1%3A142602222354543466; Domain=.twitter.com; Path=/; Expires=Thu,
+        09-Mar-2017 21:17:03 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - a41834e039ca306e5d09c50f7f476495
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '175'
+      X-Rate-Limit-Reset:
+      - '1426022784'
+      X-Response-Time:
+      - '113'
+      X-Transaction:
+      - 2c52c96bb651884e
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":34,"message":"Sorry, that page does not exist."}]}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 21:17:06 GMT
+recorded_with: VCR 2.9.3

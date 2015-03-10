@@ -27,7 +27,7 @@ class Chirpscore < Sinatra::Base
     haml :user, format: :html5
   end
 
-  error ChirpscoreError do
+  error ChirpscoreError, ChirpscoreNotFound do
     status 400
     env['sinatra.error'].message
   end
