@@ -12,9 +12,9 @@ http_interactions:
       User-Agent:
       - TwitterRubyGem/5.13.0
       Authorization:
-      - OAuth oauth_consumer_key="k1xAkSV7wHQx6fvioI9cIvyTW", oauth_nonce="f4b28229cbcc449641acad0398129f89",
-        oauth_signature="b6PPHqcs8BGwuk31yAifwXE%2BLWo%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1426025945", oauth_token="2165087958-igdBFUzugKOzUT2sNH2QQefpy7wMD6Ptacc447K",
+      - OAuth oauth_consumer_key="k1xAkSV7wHQx6fvioI9cIvyTW", oauth_nonce="4a275fa462d1e98aeb73e702eae3fb04",
+        oauth_signature="7ED%2FBZsaO%2F4B5p1jJ2Xv3fPuBf4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426022600", oauth_token="2165087958-igdBFUzugKOzUT2sNH2QQefpy7wMD6Ptacc447K",
         oauth_version="1.0"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -32,18 +32,18 @@ http_interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 22:19:03 GMT
+      - Tue, 10 Mar 2015 21:23:18 GMT
       Expires:
       - Tue, 31 Mar 1981 05:00:00 GMT
       Last-Modified:
-      - Tue, 10 Mar 2015 22:19:03 GMT
+      - Tue, 10 Mar 2015 21:23:18 GMT
       Pragma:
       - no-cache
       Server:
       - tsa_f
       Set-Cookie:
-      - guest_id=v1%3A142602594312250235; Domain=.twitter.com; Path=/; Expires=Thu,
-        09-Mar-2017 22:19:03 UTC
+      - guest_id=v1%3A142602259836071671; Domain=.twitter.com; Path=/; Expires=Thu,
+        09-Mar-2017 21:23:18 UTC
       - lang=en
       Status:
       - 200 OK
@@ -52,7 +52,7 @@ http_interactions:
       X-Access-Level:
       - read-write
       X-Connection-Hash:
-      - b8633b085b8f27e98e72ff27df628a86
+      - 8910fdb94236ffb2c985aac3f00f583d
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -60,13 +60,13 @@ http_interactions:
       X-Rate-Limit-Limit:
       - '180'
       X-Rate-Limit-Remaining:
-      - '172'
+      - '163'
       X-Rate-Limit-Reset:
-      - '1426026043'
+      - '1426022784'
       X-Response-Time:
-      - '121'
+      - '118'
       X-Transaction:
-      - 72e84841327c2aea
+      - 46fd79c8b15d0ca2
       X-Twitter-Response-Tags:
       - BouncerCompliant
       X-Xss-Protection:
@@ -81,7 +81,7 @@ http_interactions:
         rel=\"nofollow\"\u003eMobile Web (M2)\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[{"text":"LongIslandMedium","indices":[84,101]}],"symbols":[],"user_mentions":[{"screen_name":"TLC","name":"TLC
         Network","id":21313855,"id_str":"21313855","indices":[79,83]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 22:19:05 GMT
+  recorded_at: Tue, 10 Mar 2015 21:23:20 GMT
 - request:
     method: get
     uri: https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=ngoodall
@@ -94,9 +94,9 @@ http_interactions:
       User-Agent:
       - TwitterRubyGem/5.13.0
       Authorization:
-      - OAuth oauth_consumer_key="k1xAkSV7wHQx6fvioI9cIvyTW", oauth_nonce="1fbab5bec806159a3dd57848425dbf7b",
-        oauth_signature="YtG0VpJZq7eAzzSgOqtXOMAGdCM%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1426025945", oauth_token="2165087958-igdBFUzugKOzUT2sNH2QQefpy7wMD6Ptacc447K",
+      - OAuth oauth_consumer_key="k1xAkSV7wHQx6fvioI9cIvyTW", oauth_nonce="4eac640db8d63f860002d365114c3933",
+        oauth_signature="9zll6BpbSOEtBcV4r8ub6HC7Wy0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426022600", oauth_token="2165087958-igdBFUzugKOzUT2sNH2QQefpy7wMD6Ptacc447K",
         oauth_version="1.0"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -114,18 +114,18 @@ http_interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 22:19:03 GMT
+      - Tue, 10 Mar 2015 21:23:18 GMT
       Expires:
       - Tue, 31 Mar 1981 05:00:00 GMT
       Last-Modified:
-      - Tue, 10 Mar 2015 22:19:03 GMT
+      - Tue, 10 Mar 2015 21:23:18 GMT
       Pragma:
       - no-cache
       Server:
       - tsa_f
       Set-Cookie:
-      - guest_id=v1%3A142602594341368557; Domain=.twitter.com; Path=/; Expires=Thu,
-        09-Mar-2017 22:19:03 UTC
+      - guest_id=v1%3A142602259864456478; Domain=.twitter.com; Path=/; Expires=Thu,
+        09-Mar-2017 21:23:18 UTC
       - lang=en
       Status:
       - 200 OK
@@ -134,7 +134,7 @@ http_interactions:
       X-Access-Level:
       - read-write
       X-Connection-Hash:
-      - 5375e047c4fca50dc76e7c7e3d30cc64
+      - d0775dcb0e9e9d629ffcbd2cea4327c8
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -142,13 +142,13 @@ http_interactions:
       X-Rate-Limit-Limit:
       - '180'
       X-Rate-Limit-Remaining:
-      - '172'
+      - '167'
       X-Rate-Limit-Reset:
-      - '1426026043'
+      - '1426023404'
       X-Response-Time:
-      - '127'
+      - '138'
       X-Transaction:
-      - 04d5e2b41f7c6e9b
+      - 3afb37dcc5b7a37a
       X-Twitter-Response-Tags:
       - BouncerCompliant
       X-Xss-Protection:
@@ -178,5 +178,102 @@ http_interactions:
         rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":17531821,"id_str":"17531821","name":"ngoodall","screen_name":"ngoodall","location":"","profile_location":null,"description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":5,"friends_count":9,"listed_count":0,"created_at":"Fri
         Nov 21 05:30:35 +0000 2008","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":5,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"}]'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 22:19:06 GMT
+  recorded_at: Tue, 10 Mar 2015 21:23:21 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=ngoodall
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.13.0
+      Authorization:
+      - OAuth oauth_consumer_key="k1xAkSV7wHQx6fvioI9cIvyTW", oauth_nonce="65f303298415f1cd9d3b592e5a3ce5ef",
+        oauth_signature="aSvOt1MqisHh5qjqueHgxnS6e2U%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1426022601", oauth_token="2165087958-igdBFUzugKOzUT2sNH2QQefpy7wMD6Ptacc447K",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '1197'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 10 Mar 2015 21:23:19 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 10 Mar 2015 21:23:18 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_f
+      Set-Cookie:
+      - guest_id=v1%3A142602259894770857; Domain=.twitter.com; Path=/; Expires=Thu,
+        09-Mar-2017 21:23:18 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 118112425ea8287554b22c3411765bd5
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '166'
+      X-Rate-Limit-Reset:
+      - '1426023404'
+      X-Response-Time:
+      - '118'
+      X-Transaction:
+      - 37e047bc478dda4c
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Mon Mar 10 02:37:34 +0000 2014","id":442851729298563073,"id_str":"442851729298563073","text":"It
+        is amazing to see you change the lives of so many people. I love your show!
+        @TLC #LongIslandMedium","source":"\u003ca href=\"https:\/\/mobile.twitter.com\"
+        rel=\"nofollow\"\u003eMobile Web (M2)\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":17531821,"id_str":"17531821","name":"ngoodall","screen_name":"ngoodall","location":"","profile_location":null,"description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":5,"friends_count":9,"listed_count":0,"created_at":"Fri
+        Nov 21 05:30:35 +0000 2008","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":5,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[{"text":"LongIslandMedium","indices":[84,101]}],"symbols":[],"user_mentions":[{"screen_name":"TLC","name":"TLC
+        Network","id":21313855,"id_str":"21313855","indices":[79,83]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Thu
+        May 07 14:24:21 +0000 2009","id":1727446254,"id_str":"1727446254","text":"researching
+        the best deals","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter
+        Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":17531821,"id_str":"17531821","name":"ngoodall","screen_name":"ngoodall","location":"","profile_location":null,"description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":5,"friends_count":9,"listed_count":0,"created_at":"Fri
+        Nov 21 05:30:35 +0000 2008","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":5,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Thu
+        Apr 30 17:29:05 +0000 2009","id":1660944339,"id_str":"1660944339","text":"making
+        the most of this rainy weather","source":"\u003ca href=\"http:\/\/twitter.com\"
+        rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":17531821,"id_str":"17531821","name":"ngoodall","screen_name":"ngoodall","location":"","profile_location":null,"description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":5,"friends_count":9,"listed_count":0,"created_at":"Fri
+        Nov 21 05:30:35 +0000 2008","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":5,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Mar 17 14:51:06 +0000 2009","id":1342441520,"id_str":"1342441520","text":"getting
+        ready to start the work day and enjoying the beautiful sunshine!!!","source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":17531821,"id_str":"17531821","name":"ngoodall","screen_name":"ngoodall","location":"","profile_location":null,"description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":5,"friends_count":9,"listed_count":0,"created_at":"Fri
+        Nov 21 05:30:35 +0000 2008","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":5,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Fri
+        Nov 21 05:33:16 +0000 2008","id":1016026716,"id_str":"1016026716","text":"down
+        loading pictures to the computer.","source":"\u003ca href=\"http:\/\/twitter.com\"
+        rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":17531821,"id_str":"17531821","name":"ngoodall","screen_name":"ngoodall","location":"","profile_location":null,"description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":5,"friends_count":9,"listed_count":0,"created_at":"Fri
+        Nov 21 05:30:35 +0000 2008","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":5,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_6_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"}]'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 21:23:21 GMT
 recorded_with: VCR 2.9.3

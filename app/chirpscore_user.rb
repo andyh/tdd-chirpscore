@@ -8,7 +8,7 @@ class ChirpscoreUser
 
   def initialize handle:, gateway: TwitterGateway.new, analyzer: SentimentAnalyzer.new
     raise(ChirpscoreError, "invalid handle") if handle.include?(" ")
-    @handle   = handle
+    @handle   = normalize(handle)
     @gateway  = gateway
     @analyzer = analyzer
     raise(ChirpscoreNotFound, "handle does not exist") unless check_handle_existence
@@ -19,14 +19,15 @@ class ChirpscoreUser
   end
 
   def score
+    return @score if @score
     tweets = gateway.fetch_phrases(handle)
     results = tweets.inject(0.0) { |a, e| a + analyzer.get_score(e) } / tweets.length
-    sprintf("%0.02f", results * 10).to_f
+    @score = sprintf("%0.02f", results * 10).to_f
   end
 
   def phrase
-    mood = score.to_f > 0 ? "ecstatic" : "irritated"
-    "#{handle[1..-1]} is an #{mood} tweeter with a score of #{score}"
+    mood = score > 0 ? "ecstatic" : "irritated"
+    "#{handle} is an #{mood} tweeter with a score of #{score}"
   end
 
   private
@@ -34,6 +35,10 @@ class ChirpscoreUser
 
   def check_handle_existence
     gateway.handle_exists?(handle)
+  end
+
+  def normalize(raw_handle)
+    raw_handle.gsub("@","")
   end
 end
 
